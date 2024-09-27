@@ -1,0 +1,158 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+ 
+  .App {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  
+  .App-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .brand-name {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .welcome-message {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  .sign-up-btn {
+    padding: 12px 18px;
+    background: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sign-up-btn:hover {
+    background: #e0a800;
+  }
+  
+  /* Sign-Up Modal Styling */
+  .sign-up-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Sign-Up Form Styling */
+  .sign-up-form {
+    background: #fff;
+    padding: 30px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: left;
+    animation: slideIn 0.4s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .sign-up-form h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .sign-up-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .sign-up-form input:focus {
+    border: 1px solid #007bff;
+    outline: none;
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background: #218838;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 23px;
+    background: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #333;
+    background-color: #007bff;
+  }
+  
+ 
+  

@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  color: #ddd;
+  border-bottom: 2px solid #3c3c3c;
+  background-color: #09005c;
+}
+
+.navbar .logo {
+  width: max(12vw, 120px);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-size: 30px;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid white;
+  background: #3c3c3c;
+  color: white;
+  font-size: 16px;
+}
+
+.navbar option {
+  background-color: #09005c;
+  color: white;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: hsl(210deg 87% 36%) 0px 7px 0px 0px;
+  background-color:black;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f8d;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(4px);
+  transition: 0.15s;
+}
+
+button i {
+  display: none;
+}
+
+button img {
+  width: 30px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px 8%;
+  }
+  .navbar ul {
+    display: none;
+  }
+  button img {
+    width: 20px;
+  }
+  .navbar .nav-right {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar .nav-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar select {
+    width: 80px;
+  }
+}
